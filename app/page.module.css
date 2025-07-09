@@ -1,0 +1,56 @@
+.page {
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	margin: var(--page-padding);
+
+	.border {
+		pointer-events: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: var(--window-width);
+		height: 100vh;
+		fill: transparent;
+		z-index: 999;
+
+		.borderRect {
+			stroke: #fff;
+			stroke-width: calc((var(--page-padding-numeric) * 2) + 2);
+			width: var(--window-width);
+			height: 100vh;
+			stroke-dasharray: calc(
+				var(--window-width) * 2 + var(--window-height) * 2
+			);
+			stroke-dashoffset: calc(
+				var(--window-width) * 2 + var(--window-height) * 2
+			);
+			animation: drawBorder 4s ease-in-out forwards;
+		}
+
+		.borderRectOutside {
+			stroke: #202124;
+			stroke-width: calc(var(--page-padding-numeric) * 2);
+			width: var(--window-width);
+			height: 100vh;
+		}
+	}
+
+	.main {
+		width: 100%;
+	}
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+}
+
+@keyframes drawBorder {
+	0% {
+		stroke-dashoffset: calc(var(--window-width) * 2 + var(--window-height) * 2);
+	}
+
+	100% {
+		stroke-dashoffset: 0;
+	}
+}

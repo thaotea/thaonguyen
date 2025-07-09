@@ -1,0 +1,43 @@
+.project {
+	min-height: calc(100vh - var(--page-padding) * 2);
+	padding: var(--page-padding);
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 30px;
+	align-items: flex-start;
+	margin-bottom: 60px;
+
+	@media (max-width: 767px) {
+		grid-template-columns: 1fr;
+	}
+
+	.titleDiv {
+		margin-bottom: var(--page-padding);
+
+		max-width: 35ch;
+		text-shadow: 0 0 1px black;
+
+		@media (max-width: 767px) {
+			max-width: 100%;
+			grid-row-start: 2;
+		}
+	}
+
+	.description {
+		opacity: 0.6;
+	}
+
+	.imgWrap {
+		position: relative;
+	}
+
+	.img {
+		position: relative;
+		width: 100%;
+		box-shadow: rgba(0, 0, 0, 0.325) -1px 0px 6px 0px;
+	}
+
+	&.td {
+	}
+}
