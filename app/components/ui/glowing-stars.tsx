@@ -132,6 +132,7 @@ export const Illustration = ({ mouseEnter }: { mouseEnter: boolean }) => {
 					>
 						<Star
 							isGlowing={mouseEnter ? true : isGlowing}
+							isFading={fadingStars.includes(starIdx)}
 							delay={mouseEnter ? staticDelay : delay}
 						/>
 						{mouseEnter && <Glow delay={staticDelay} />}
