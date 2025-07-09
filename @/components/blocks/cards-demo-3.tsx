@@ -66,10 +66,26 @@ const Skeleton = () => {
 	];
 
 	useEffect(() => {
-		// @ts-ignore
-		animate(sequence, {
-			repeat: Infinity,
-			repeatDelay: 1,
+		const scale = [1, 1.1, 1];
+		const transform = [
+			'translateY(0px)',
+			'translateY(-4px)',
+			'translateY(0px)',
+		];
+		const selectors = [
+			'.circle-1',
+			'.circle-2',
+			'.circle-3',
+			'.circle-4',
+			'.circle-5',
+		];
+
+		selectors.forEach((selector) => {
+			animate(
+				selector,
+				{ scale, transform },
+				{ duration: 0.8, repeat: Number.POSITIVE_INFINITY, repeatDelay: 1 }
+			);
 		});
 	}, []);
 	return (
