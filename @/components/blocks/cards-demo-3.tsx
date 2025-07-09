@@ -133,7 +133,7 @@ const Sparkles = () => {
 					}}
 					transition={{
 						duration: random() * 2 + 4,
-						repeat: Infinity,
+						repeat: Number.POSITIVE_INFINITY,
 						ease: 'linear',
 					}}
 					style={{
