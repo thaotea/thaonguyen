@@ -16,7 +16,10 @@ export default function Header() {
 		{ text: 'Projects', href: './#projects' },
 		{ text: 'About', href: '/about' },
 		{ text: 'Resume', href: '#' },
-		{ text: 'Connect', href: '#' },
+		{
+			text: 'Connect',
+			href: 'https://www.linkedin.com/in/thao-nguyen-04bab313b/',
+		},
 	];
 
 	const handleClick = () => {
