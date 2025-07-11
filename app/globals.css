@@ -78,10 +78,18 @@ h3.font-sans {
 			transform: rotate(-180deg);
 		}
 	}
+
+	&.next {
+		text-align: right;
+	}
 	&:hover,
 	&:focus {
 		.arrowText {
 			animation: move-text-enter 700ms forwards;
+
+			@media only screen and (max-width: 991px) {
+				animation: none;
+			}
 		}
 	}
 
@@ -117,6 +125,12 @@ h3.font-sans {
 		transform: translateY(170%);
 		opacity: 0;
 		animation: move-text-leave 700ms forwards;
+
+		@media only screen and (max-width: 991px) {
+			animation: none;
+			opacity: 1;
+			transform: none;
+		}
 	}
 }
 

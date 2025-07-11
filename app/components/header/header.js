@@ -15,10 +15,12 @@ export default function Header() {
 	const links = [
 		{ text: 'Projects', href: './#projects' },
 		{ text: 'About', href: '/about' },
-		{ text: 'Resume', href: '#' },
+		{ text: 'Resume', href: '/Thao-Nguyen-Resume.pdf', target: '_blank' },
+		{ text: 'Email', href: 'mailto:thaotnguyen910@gmail.com' },
 		{
 			text: 'Connect',
 			href: 'https://www.linkedin.com/in/thao-nguyen-04bab313b/',
+			target: '_blank',
 		},
 	];
 
@@ -86,13 +88,13 @@ export default function Header() {
 						xmlns='http://www.w3.org/2000/svg'
 					>
 						<g>
-							<line x1='0' y1='12' x2='48' y2='12' stroke-width='4' />
-							<line x1='0' y1='36' x2='48' y2='36' stroke-width='4' />
+							<line x1='0' y1='12' x2='48' y2='12' strokeWidth='4' />
+							<line x1='0' y1='36' x2='48' y2='36' strokeWidth='4' />
 						</g>
 
 						<g>
-							<line x1='0' y1='24' x2='48' y2='24' stroke-width='4' />
-							<line x1='0' y1='24' x2='48' y2='24' stroke-width='4' />
+							<line x1='0' y1='24' x2='48' y2='24' strokeWidth='4' />
+							<line x1='0' y1='24' x2='48' y2='24' strokeWidth='4' />
 						</g>
 					</svg>
 				</button>
@@ -103,7 +105,7 @@ export default function Header() {
 					fadingOut ? styles.fadingOut : ''
 				}`}
 				id='navbarNav'
-				tabindex='-1'
+				tabIndex='-1'
 				role='dialog'
 				aria-modal='true'
 			>
@@ -114,6 +116,7 @@ export default function Header() {
 								<a
 									className={styles.navLink}
 									href={link.href}
+									target={link.target}
 									onClick={(e) => {
 										if (link.href === '/#projects') {
 											e.preventDefault();

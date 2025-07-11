@@ -259,10 +259,10 @@ export default function Home() {
 									<path
 										className={`arrowPath`}
 										d='M2.97776 28H83.0222C71.7792 22.2725 63.2233 13.7165 57.425 2.40276M57.3543 53.668C63.2233 42.2836 71.7792 33.7276 82.9515 28.0707'
-										stroke-width='8'
-										stroke-miterlimit='10'
-										stroke-linecap='round'
-										stroke-linejoin='round'
+										strokeWidth='8'
+										strokeMiterlimit='10'
+										strokeLinecap='round'
+										strokeLinejoin='round'
 									/>
 								</svg>
 							</div>
@@ -283,10 +283,10 @@ export default function Home() {
 									<path
 										className={`arrowPath`}
 										d='M2.97776 28H83.0222C71.7792 22.2725 63.2233 13.7165 57.425 2.40276M57.3543 53.668C63.2233 42.2836 71.7792 33.7276 82.9515 28.0707'
-										stroke-width='8'
-										stroke-miterlimit='10'
-										stroke-linecap='round'
-										stroke-linejoin='round'
+										strokeWidth='8'
+										strokeMiterlimit='10'
+										strokeLinecap='round'
+										strokeLinejoin='round'
 									/>
 								</svg>
 							</div>
