@@ -40,13 +40,13 @@ export default function Intro({ onEnter, onLeave }) {
 		<section className={styles.intro}>
 			<div className={`container`}>
 				<h1 className={styles.title}>
-					I'm a UI designer and developer who transforms business challenges
-					into intuitive digital experiences. With five years of experience
-					crafting scalable design systems and accessble interfaces, my dual
-					expertise bridges the gap between vision and execution. I bring a
-					curious mindset and a drive to think above and beyond the box while
-					balancing user emphathy, technical feasibility, and business impact.
-					This approach allows me to explore how thoughtful design can improve{' '}
+					I'm a UI designer and developer who turns complex ideas into intuitive
+					digital experiences. I bring a curious mindset and user-first
+					approach, balancing empathy, technical feasibility, and business
+					impact. With five years of experience building scalable design systems
+					and accessible interfaces, I help teams deliver products that look
+					sharp, feel effortless, and perform reliably. I'm driven by the belief
+					that thoughful design can improve{' '}
 					<span className={styles.type}>{text}</span>
 				</h1>
 

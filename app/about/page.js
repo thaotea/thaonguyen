@@ -41,7 +41,7 @@ export default function Home() {
 					<div>
 						<p className='block'>
 							{' '}
-							Hi! I'm Thao, a designer and developer based in SF with a
+							Hi! I'm Thao, a UI designer and developer based in SF with a
 							Cognitive Science background from UCSD. I draw inspiration from
 							everyday experiences and human behavior, using design and
 							programming to create practical solutions that enhance our
